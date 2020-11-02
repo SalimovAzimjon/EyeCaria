@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView android:id="@+id/navigation_view_drawer"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <Button
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_home"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/home"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_camera"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/camera"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_eye"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/training"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_info"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/info"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_settings"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/settings"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_add_clinics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_ambulance"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/clinics"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</com.google.android.material.navigation.NavigationView>
+
+

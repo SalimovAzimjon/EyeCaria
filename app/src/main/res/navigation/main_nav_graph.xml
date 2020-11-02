@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trainingFragment"
+            app:destination="@id/trainingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_clinicsFragment"
+            app:destination="@id/clinicsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_introductionFragment"
+            app:destination="@id/introductionFragment"
+            app:popUpTo="@id/main_nav_graph">
+            <argument
+                android:name="message"
+                android:defaultValue="Done"
+                app:argType="string" />
+        </action>
+        <argument
+            android:name="message"
+            app:argType="string"
+            android:defaultValue="Done" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.CameraFragment"
+        android:label="CameraFragment" />
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.TrainingFragment"
+        android:label="TrainingFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.SettingsFragment"
+        android:label="Settings" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.InfoFragment"
+        android:label="InfoFragment" />
+    <fragment
+        android:id="@+id/clinicsFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.ClinicsFragment"
+        android:label="ClinicsFragment" >
+        <action
+            android:id="@+id/action_clinicsFragment_to_clinicsDetailFragment"
+            app:destination="@id/clinicsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clinicsDetailFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.ClinicsDetailFragment"
+        android:label="ClinicsDetailFragment" />
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="uz.napa.eyecaria.ui.fragments.IntroductionFragment"
+        android:label="IntroductionFragment" >
+        <action
+            android:id="@+id/action_introductionFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/main_nav_graph" />
+    </fragment>
+</navigation>

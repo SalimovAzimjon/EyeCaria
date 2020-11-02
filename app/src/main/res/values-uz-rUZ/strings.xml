@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Bosh sahifa</string>
+    <string name="camera">Kamera</string>
+    <string name="training">Mashq</string>
+    <string name="info">Ma\'lumot</string>
+    <string name="settings">Sozlamalar</string>
+    <string name="clinics">Klinikalar</string>
+    <string name="quick_help">Tez yordam</string>
+    <string name="eye_cancer">Ko\'z raki</string>
+    <string name="trainings">Mashqlar</string>
+    <string name="timer">--:--</string>
+    <string name="notification">Bildirishnoma</string>
+    <string name="turn_notification">Bildirishnomani yoqish/o\'chirish</string>
+    <string name="night_light_mode">Kunduzgi/Tungi ko\'rinish</string>
+    <string name="changing_mode_type">Ko\'rinishni o\'zgartirish</string>
+    <string name="language">Til</string>
+    <string name="change_language">Tilni o\'zgartirish english/uzbek</string>
+    <string name="privacy_and_security">Xavfsizlik</string>
+    <string name="gallery_privacy">Galereya xavfsizligi</string>
+    <string name="purpose">Maqsad</string>
+    <string name="behind_the_scene">Sahna ortida</string>
+    <string name="ophthalmology_clinics">Ko\'z klinikalari</string>
+    <string name="details">Detallar</string>
+    <string name="welcome_eyecaria">EyeCaria ga \nXush kelibsiz</string>
+    <string name="save_life">Ko\'zingizni-hayotingizni asrang\nFarzandingizni asrang</string>
+    <string name="skip">O\'tkazish</string>
+    <string name="next">Keyingisi</string>
+    <string name="app_info">Jamoamiz axborot texnologiyalari yordamida Retinoblastomaga duch kelgan bolalar hayotini saqlab qolishni maqsad qilgan.
+        Smartfonga asoslangan ilovada ishlab chiqilgan metodologiya RBni aniqlashni kuchaytirdi va bu ko\'rishni qutqarish bo\'yicha davolanishdan keyin yaxshi natijaga aylanishi mumkin.
+    </string>
+    <string name="behind_scenes">1.Aziza Ismoilova - Turin Politexnika univerisiteti Kompyuter texnologiyalari fakulteti talabasi. Mobile telefonlar uchun ilova yaratuvchi dasturchi
+
+    \n2.Yashnar Esonov - Toshkent Pediatriya tibbiyot instituti magistranti. Oftamologiya fakulteti. G’oya tadqiqotchisi
+
+    \n3.Madina Kaxxarova -Toshkent davlat iqtisodiyot universiteti Korporativ boshqaruv fakulteti talabasi. Ilovani backend qismi dasturchisi</string>
+    <string name="close">Yopish</string>
+    <string name="open">Ochish</string>
+    <string name="we_aim">Biz bolalar hayotini saqlab qolish uchun tibbiyotga yangi texnologiyalarni tarqatishni maqsad qildik</string>
+    <string name="try_again">Xatolik yana urinib ko\'ring</string>
+    <string name="calculating">Hisoblanmoqda</string>
+    <string name="calculating_error">Hisoblashda xatolik</string>
+    <string name="normal">Yaxshi</string>
+    <string name="abnormal">Shubhali</string>
+</resources>

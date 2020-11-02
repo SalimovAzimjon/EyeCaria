@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name" translatable="false">EyeCaria</string>
+    <string name="home">Home</string>
+    <string name="camera">Camera</string>
+    <string name="training">Training</string>
+    <string name="info">Info</string>
+    <string name="settings">Settings</string>
+    <string name="clinics">Clinics</string>
+    <string name="quick_help">Quick Help</string>
+    <string name="eye_cancer">Eye Cancer</string>
+    <string name="trainings">Trainings</string>
+    <string name="timer">--:--</string>
+    <string name="notification">Notification</string>
+    <string name="turn_notification">Turn on/off eye care notifications</string>
+    <string name="night_light_mode">Light/Night Mode</string>
+    <string name="changing_mode_type">Changing mode type</string>
+    <string name="language">Language</string>
+    <string name="change_language">Changing language english/uzbek</string>
+    <string name="privacy_and_security">Privacy and Security</string>
+    <string name="gallery_privacy">Gallery privacy</string>
+    <string name="purpose">Purpose</string>
+    <string name="behind_the_scene">Behind the Scene</string>
+    <string name="ophthalmology_clinics">Ophthalmology Clinics</string>
+    <string name="details">Details</string>
+    <string name="welcome_eyecaria">Welcome \nto EyeCaria</string>
+    <string name="save_life">Save your eyes - save your life\nsave your children</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="app_info">Our team aims to save the lives of children who have undergone Retinoblastoma with the help of Information Technology.
+        The methodology developed in a smartphone-based app has proven to be RB-specific, and this can turn out to be a good result after treatment for vision recovery.
+    </string>
+    <string name="behind_scenes">1.Aziza Ismoilova - Student of Turin polytechnic University at Computer Science faculty. She helped to develop this app
+
+        \n2.Yashnar Esonov - Student of Tashkent Pediatric Medical Institute, 2nd course of master degree of Ophthalmology. He came up with the idea for this app.
+
+        \n3.Madina Kakhkharova - Bachelor degree Student of Tashkent state university of economics she helped to develop backend part of application on Python
+    </string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="we_aim">We aimed to distribute new technology to medicine for saving children\'s life</string>
+    <string name="try_again">Error try again</string>
+    <string name="calculating">Calculating</string>
+    <string name="calculating_error">Calculating error</string>
+    <string name="normal">Normal</string>
+    <string name="abnormal">Abnormal</string>
+</resources>

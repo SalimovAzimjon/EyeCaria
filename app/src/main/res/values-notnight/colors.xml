@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5926A1</color>
+    <color name="colorPrimaryDark">#292828</color>
+    <color name="colorAccent">#126C7E</color>
+    <color name="colorAccentDark">#196675</color>
+    <color name="lightGreen">#3DB7CF</color>
+
+    <color name="whiteTransparent">#8BFFFFFF</color>
+    <color name="white">#000000</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="lightBlack">#A5A4A4</color>
+    <color name="lightGrey">#242427</color>
+    <color name="clinicBackground">#EDFAF7</color>
+</resources>
