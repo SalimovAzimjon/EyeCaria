@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_settings.*
 import uz.napa.eyecaria.R
 import uz.napa.eyecaria.ui.fragments.DARK_MODE
@@ -13,6 +14,7 @@ import uz.napa.eyecaria.ui.fragments.SHARED_PREF
 import uz.napa.eyecaria.util.MyContextWrapper
 import uz.napa.eyecaria.util.MyPreference
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var myPref:MyPreference
     override fun onCreate(savedInstanceState: Bundle?) {

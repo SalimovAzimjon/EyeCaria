@@ -1,13 +1,13 @@
 package uz.napa.eyecaria.repository
 
 import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import retrofit2.http.Part
-import uz.napa.eyecaria.network.RetrofitInstance
+import uz.napa.eyecaria.network.Api
 
-class Repository {
-    private val api by lazy { RetrofitInstance.api }
-
+class Repository
+constructor(
+    private val api: Api
+) {
     suspend fun uploadImage(
         @Part image: MultipartBody.Part
     ) = api.uploadImage(image)

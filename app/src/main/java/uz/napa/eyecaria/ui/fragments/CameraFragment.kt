@@ -21,22 +21,21 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.face.FaceDetection
 import com.google.mlkit.vision.face.FaceDetectorOptions
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_camera.*
 import uz.napa.eyecaria.R
-import uz.napa.eyecaria.repository.Repository
 import uz.napa.eyecaria.util.Resource
-import uz.napa.eyecaria.util.ViewModelFactory
 import java.io.File
 
 private const val PERMISSION_REQ = 101
 private const val CAMERA_PIC_REQUEST = 1001
 
+@AndroidEntryPoint
 class CameraFragment : BaseFragment(R.layout.fragment_camera, R.color.colorAccent) {
 
     private var bitmapImage: Bitmap? = null
     private var imageUri: Uri? = null
-
-    private val viewModel by viewModels<CameraViewModel> { ViewModelFactory(Repository()) }
+    private val viewModel by viewModels<CameraViewModel>()
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -77,7 +76,8 @@ class CameraFragment : BaseFragment(R.layout.fragment_camera, R.color.colorAccen
                         }
                         .addOnFailureListener { e ->
                         }
-                    val text = if (isNormal) getString(R.string.normal) else getString(R.string.abnormal)
+                    val text =
+                        if (isNormal) getString(R.string.normal) else getString(R.string.abnormal)
                     Toast.makeText(
                         requireContext(),
                         text,
@@ -87,7 +87,7 @@ class CameraFragment : BaseFragment(R.layout.fragment_camera, R.color.colorAccen
                 }
                 is Resource.Error -> {
                     hideLoading()
-                    Snackbar.make(img,getString(R.string.try_again),Snackbar.LENGTH_SHORT).show()
+                    Snackbar.make(img, getString(R.string.try_again), Snackbar.LENGTH_SHORT).show()
                     tv_cancer.text = getString(R.string.calculating_error)
                     openCamera()
                 }
@@ -100,7 +100,7 @@ class CameraFragment : BaseFragment(R.layout.fragment_camera, R.color.colorAccen
         tv_cancer.text = getString(R.string.calculating)
     }
 
-    private fun hideLoading(){
+    private fun hideLoading() {
         progress_bar.isVisible = false
         tv_cancer.text = getString(R.string.eye_cancer)
     }
